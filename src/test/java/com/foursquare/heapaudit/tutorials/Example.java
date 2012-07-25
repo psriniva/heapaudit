@@ -20,7 +20,7 @@ public abstract class Example {
 
     }
 
-    protected static void allocateBar() {
+    public static void allocateBar() {
 
         Bar b = new Bar();
 

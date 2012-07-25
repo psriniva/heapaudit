@@ -14,7 +14,7 @@ public class TestCustom {
 
     @Test public void Custom() throws InterruptedException, IOException {
 
-        Process process = Runtime.getRuntime().exec("java -javaagent:" + System.getProperty("heapaudit") + "=-Icom.foursquare.heapaudit.tutorials.Example@allocateBar.+#-Xrecorder=com.foursquare.heapaudit.recorders.HeapTotal@" + System.getProperty("heaprecorders") + " -classpath test-classes com/foursquare/heapaudit/tutorials/example4/Custom");
+        Process process = Runtime.getRuntime().exec("java -javaagent:" + System.getProperty("heapaudit") + "=-Icom.foursquare.heapaudit.tutorials.Example@allocateBar.+#-Xrecorder=com.foursquare.heapaudit.recorders.HeapTotal@" + System.getProperty("heaprecorders") + " -classpath test-classes com/foursquare/heapaudit/tutorials/example4/Custom1");
 
         process.waitFor();
 
